@@ -1,9 +1,12 @@
 import React from 'react';
+import Test08Big from './Test08Big';
+import Test08List from './Test08List';
 
 const Test08View = () => {
   return (
-    <div>
-      
+    <div className='bigView'>
+      <Test08Big/>
+      <Test08List/>
     </div>
   );
 };
