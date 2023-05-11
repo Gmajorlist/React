@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Test01 = () => {
   const names = '에이,비,씨,디,이,에프.쥐,벌레,강아지,도레미'.split(',')
@@ -15,6 +15,16 @@ const Test01 = () => {
   const onAge = () => {
     setAge(age + 1 )
   }
+  //거의 사용안함
+  // useEffect(() => {
+  //   console.log('안녕')
+  // }, [])
+  
+  // name 의 값이 바뀔때만 수행
+  useEffect(() => {
+    console.log('안녕')
+  }, [name])
+
 
   return (
     <div>
