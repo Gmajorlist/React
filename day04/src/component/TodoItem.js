@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TodoItem = ({item}) => {
+const TodoItem = ({item,onDel}) => {
   const { seq, text} = item
   return (
     <li>
       { text }
-      <button>삭제</button>
+      <button onClick={ () => onDel(seq) }>삭제</button>
     </li>
   );
 };
